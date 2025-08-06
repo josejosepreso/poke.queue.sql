@@ -1,5 +1,5 @@
 create or alter procedure pokequeue.delete_poke_request(
-    @id int
+	@id int
 )
 as
 begin

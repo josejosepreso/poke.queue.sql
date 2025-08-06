@@ -13,5 +13,6 @@ create table pokequeue.[requests](
     [url] NVARCHAR(1000) NOT NULL, 
     created DATETIME DEFAULT GETDATE(),
     updated DATETIME DEFAULT GETDATE(),
+    sample_size INT
     FOREIGN KEY (id_status) REFERENCES pokequeue.[status](id)
 )
