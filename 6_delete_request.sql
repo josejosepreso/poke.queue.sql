@@ -12,5 +12,5 @@ begin
 		end
 
 	delete from pokequeue.requests where id = @id;
-	select @id as deleted_id;
+	select @id as id, 'delete' as 'action';
 end;
